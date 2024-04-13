@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     private val apiUrl = "https://mercury-uat.phonepe.com/enterprise-sandbox/v3/qr/init"
     var apiEndPoint = "/v3/qr/init"
-    val salt = "58a63b64-574d-417a-9214-066bee1e4caa" // salt key
+    val salt = "" // salt key
 
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
         // Construct the request parameters
         val params = mapOf(
-            "merchantId" to "ATMOSTUAT",
+            "merchantId" to "",
             "transactionId" to "TX12345678901331",
             "merchantOrderId" to "M1234567013d34444",
             "amount" to 100,
