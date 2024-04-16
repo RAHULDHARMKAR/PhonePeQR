@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             initiateTransaction()
 
             val qrString =
-                "upi://pay?pa=MERCHANTUAT@ybl&pn=Test%20MerchantTT&am=10.00&mam=10.00&tr=TX32321849644234&tn=Payment%20for%20TX32321849644234&mc=5311&mode=04&purpose=00&gstBrkUp=GST:1.0|CGST:0.25|SGST:0.25|IGST:0.25|CESS:0.25|GSTIncentive:1.0|GSTPCT:10.0&invoiceNo=123456fffff##_##&invoiceDate=2021-06-29T15:43:54+05:30&invoiceName=bccbd_cjdcdjc******"
+                "upi://pay?pa=IVEPOSUAT&pn=IVEPOS&am=10.00&tr=TX12345678901331424256"
             // Generate QR Code
             val qrCodeBitmap = generateQRCode(qrString)
             imageView.setImageBitmap(qrCodeBitmap)
